@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core
 {
-    internal class ProductFeature:BaseEntity
+    public class ProductFeature:BaseEntity
     {
         public int Id { get; set; }
-        public int Color{ get; set; }
+        public string Color{ get; set; }
         public int Height{ get; set; }
         public int Width { get; set; }
         public int ProductId { get; set; }

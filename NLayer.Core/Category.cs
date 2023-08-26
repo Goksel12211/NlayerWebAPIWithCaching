@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core
 {
-    internal class Category:BaseEntity
+    public class Category:BaseEntity
     {
         public string Name{ get; set; }
         public ICollection<Product> Products{ get; set; } // Diğer entitylerle İlişki içeren propertylere "navigation property denir".

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.Repositories
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IService<T> where T : class
     {
         IQueryable<T> GetAll(Expression<Func<T,bool>> expression);
         Task<T> GetByIdAsync(int id);

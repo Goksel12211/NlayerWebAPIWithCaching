@@ -12,7 +12,7 @@ namespace NLayer.Core
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; } // Entity Create olduğunda updateddate null olmalı bu yüzden nullable açık "?" ile
 
     }
 }
