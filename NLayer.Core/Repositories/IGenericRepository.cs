@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.Repositories
 {
-    public interface IService<T> where T : class
+    public interface IGenericRepository<T> where T : class
     {
-        IQueryable<T> GetAll(Expression<Func<T,bool>> expression);
+        IQueryable<T> GetAll();
         Task<T> GetByIdAsync(int id);
         // Best Practise açısından her asenkron fonksyionun sonuna "Async" konulmalı !
         // EX USAGE: productRepository.where(x=>x.id>5).OrderBy.ToListAsync();

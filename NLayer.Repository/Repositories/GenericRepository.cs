@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Repository.Repositories
 {
-    public class GenericRepository<T> : IService<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         // readonly sadece constructur veya initial da değer atılılacağı zaman kullanılır. Daha sonra set edilemez ! 
         protected readonly AppDbContext _context;
@@ -38,6 +38,11 @@ namespace NLayer.Repository.Repositories
         public IQueryable<T> GetAll(Expression<Func<T, bool>> expression)
         {
             return _dbSet.AsNoTracking().AsQueryable(); // AsNoTracking ile direk olarak databaseden çekilmez . Sadece sorgu hazırlanıyor.
+        }
+
+        public IQueryable<T> GetAll()
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<T> GetByIdAsync(int id)
