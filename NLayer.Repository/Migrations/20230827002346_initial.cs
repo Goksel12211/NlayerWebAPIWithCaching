@@ -57,9 +57,7 @@ namespace NLayer.Repository.Migrations
                     Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Height = table.Column<int>(type: "int", nullable: false),
                     Width = table.Column<int>(type: "int", nullable: false),
-                    ProductId = table.Column<int>(type: "int", nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    ProductId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -92,22 +90,22 @@ namespace NLayer.Repository.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Name", "Price", "Stock", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2023, 8, 26, 22, 4, 52, 776, DateTimeKind.Local).AddTicks(5979), "Kalem 1", 199m, 24, null },
-                    { 2, 1, new DateTime(2023, 8, 26, 22, 4, 52, 776, DateTimeKind.Local).AddTicks(5988), "Kalem 2", 19m, 4, null },
-                    { 3, 1, new DateTime(2023, 8, 26, 22, 4, 52, 776, DateTimeKind.Local).AddTicks(5989), "Kalem 3", 9m, 4, null },
-                    { 4, 2, new DateTime(2023, 8, 26, 22, 4, 52, 776, DateTimeKind.Local).AddTicks(5990), "Kitap 1", 1932m, 234, null },
-                    { 5, 2, new DateTime(2023, 8, 26, 22, 4, 52, 776, DateTimeKind.Local).AddTicks(5990), "Kitap 2", 1990m, 240, null }
+                    { 1, 1, new DateTime(2023, 8, 27, 3, 23, 45, 921, DateTimeKind.Local).AddTicks(3613), "Kalem 1", 199m, 24, null },
+                    { 2, 1, new DateTime(2023, 8, 27, 3, 23, 45, 921, DateTimeKind.Local).AddTicks(3622), "Kalem 2", 19m, 4, null },
+                    { 3, 1, new DateTime(2023, 8, 27, 3, 23, 45, 921, DateTimeKind.Local).AddTicks(3623), "Kalem 3", 9m, 4, null },
+                    { 4, 2, new DateTime(2023, 8, 27, 3, 23, 45, 921, DateTimeKind.Local).AddTicks(3624), "Kitap 1", 1932m, 234, null },
+                    { 5, 2, new DateTime(2023, 8, 27, 3, 23, 45, 921, DateTimeKind.Local).AddTicks(3625), "Kitap 2", 1990m, 240, null }
                 });
 
             migrationBuilder.InsertData(
                 table: "ProductFeatures",
-                columns: new[] { "Id", "Color", "CreatedDate", "Height", "ProductId", "UpdatedDate", "Width" },
-                values: new object[] { 1, "Kırımızı", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 199, 1, null, 100 });
+                columns: new[] { "Id", "Color", "Height", "ProductId", "Width" },
+                values: new object[] { 1, "Kırımızı", 199, 1, 100 });
 
             migrationBuilder.InsertData(
                 table: "ProductFeatures",
-                columns: new[] { "Id", "Color", "CreatedDate", "Height", "ProductId", "UpdatedDate", "Width" },
-                values: new object[] { 2, "Sarı", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1992, 2, null, 10 });
+                columns: new[] { "Id", "Color", "Height", "ProductId", "Width" },
+                values: new object[] { 2, "Sarı", 1992, 2, 10 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductFeatures_ProductId",
