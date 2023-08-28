@@ -9,13 +9,21 @@ using NLayer.Service.Services;
 using System.Reflection;
 using NLayer.Service.Mapping;
 using NLayer.Repository.UnitOfWorks;
+using FluentValidation.AspNetCore;
+using NLayer.Service.Valiodations;
+using NLayer.API.Filters;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options=> options.Filters.Add(new ValideteFilterAttribute())).AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<ProductDTOValidator>());
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true; // Fluent Validationin dondugu cevaplar kapatilir
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
