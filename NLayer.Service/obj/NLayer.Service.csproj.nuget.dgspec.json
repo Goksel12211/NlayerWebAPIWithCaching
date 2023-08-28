@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj": {}
+    "C:\\Users\\carry\\Nlayer\\NLayer.Service\\NLayer.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\NLayer.Core.csproj": {
+    "C:\\Users\\carry\\Nlayer\\NLayer.Core\\NLayer.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\NLayer.Core.csproj",
+        "projectUniqueName": "C:\\Users\\carry\\Nlayer\\NLayer.Core\\NLayer.Core.csproj",
         "projectName": "NLayer.Core",
-        "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\NLayer.Core.csproj",
+        "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Core\\NLayer.Core.csproj",
         "packagesPath": "C:\\Users\\carry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\obj\\",
+        "outputPath": "C:\\Users\\carry\\Nlayer\\NLayer.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\carry\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Repository\\NLayer.Repository.csproj": {
+    "C:\\Users\\carry\\Nlayer\\NLayer.Repository\\NLayer.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Repository\\NLayer.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\carry\\Nlayer\\NLayer.Repository\\NLayer.Repository.csproj",
         "projectName": "NLayer.Repository",
-        "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Repository\\NLayer.Repository.csproj",
+        "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Repository\\NLayer.Repository.csproj",
         "packagesPath": "C:\\Users\\carry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Repository\\obj\\",
+        "outputPath": "C:\\Users\\carry\\Nlayer\\NLayer.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\carry\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\NLayer.Core.csproj": {
-                "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\NLayer.Core.csproj"
+              "C:\\Users\\carry\\Nlayer\\NLayer.Core\\NLayer.Core.csproj": {
+                "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Core\\NLayer.Core.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj": {
+    "C:\\Users\\carry\\Nlayer\\NLayer.Service\\NLayer.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj",
+        "projectUniqueName": "C:\\Users\\carry\\Nlayer\\NLayer.Service\\NLayer.Service.csproj",
         "projectName": "NLayer.Service",
-        "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj",
+        "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Service\\NLayer.Service.csproj",
         "packagesPath": "C:\\Users\\carry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Service\\obj\\",
+        "outputPath": "C:\\Users\\carry\\Nlayer\\NLayer.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\carry\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,8 +158,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Repository\\NLayer.Repository.csproj": {
-                "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Repository\\NLayer.Repository.csproj"
+              "C:\\Users\\carry\\Nlayer\\NLayer.Repository\\NLayer.Repository.csproj": {
+                "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Repository\\NLayer.Repository.csproj"
               }
             }
           }

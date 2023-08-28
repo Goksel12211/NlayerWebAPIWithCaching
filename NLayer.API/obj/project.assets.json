@@ -2302,11 +2302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.API\\NLayer.API.csproj",
+      "projectUniqueName": "C:\\Users\\carry\\Nlayer\\NLayer.API\\NLayer.API.csproj",
       "projectName": "NLayer.API",
-      "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.API\\NLayer.API.csproj",
+      "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.API\\NLayer.API.csproj",
       "packagesPath": "C:\\Users\\carry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.API\\obj\\",
+      "outputPath": "C:\\Users\\carry\\Nlayer\\NLayer.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\carry\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2324,8 +2324,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj": {
-              "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj"
+            "C:\\Users\\carry\\Nlayer\\NLayer.Service\\NLayer.Service.csproj": {
+              "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Service\\NLayer.Service.csproj"
             }
           }
         }

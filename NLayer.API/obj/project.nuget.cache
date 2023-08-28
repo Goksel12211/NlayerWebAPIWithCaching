@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o7o4cOaDmcx1TXC/6Mw3E0fIwj03mJx0QdH3gkNcWSgjsCJqjRyYcJk55R35ksl3Yg/B7t95niN9ixzsIT3ZKw==",
+  "dgSpecHash": "WDKrmYbvvs1GZwH9ERTpj7peFbSUiccwbrOw5flaaAQSVFoslkYp+GMudl6ncLrCCk4YUCAF/HqcUthxOd0+oQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.API\\NLayer.API.csproj",
+  "projectFilePath": "C:\\Users\\carry\\Nlayer\\NLayer.API\\NLayer.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carry\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\carry\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

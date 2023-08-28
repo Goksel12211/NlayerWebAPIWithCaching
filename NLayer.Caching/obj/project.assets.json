@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Caching\\NLayer.Caching.csproj",
+      "projectUniqueName": "C:\\Users\\carry\\Nlayer\\NLayer.Caching\\NLayer.Caching.csproj",
       "projectName": "NLayer.Caching",
-      "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Caching\\NLayer.Caching.csproj",
+      "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Caching\\NLayer.Caching.csproj",
       "packagesPath": "C:\\Users\\carry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Caching\\obj\\",
+      "outputPath": "C:\\Users\\carry\\Nlayer\\NLayer.Caching\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\carry\\AppData\\Roaming\\NuGet\\NuGet.Config",

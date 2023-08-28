@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\NLayer.Core.csproj",
+      "projectUniqueName": "C:\\Users\\carry\\Nlayer\\NLayer.Core\\NLayer.Core.csproj",
       "projectName": "NLayer.Core",
-      "projectPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\NLayer.Core.csproj",
+      "projectPath": "C:\\Users\\carry\\Nlayer\\NLayer.Core\\NLayer.Core.csproj",
       "packagesPath": "C:\\Users\\carry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carry\\source\\repos\\NLayerApp\\NLayer.Core\\obj\\",
+      "outputPath": "C:\\Users\\carry\\Nlayer\\NLayer.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\carry\\AppData\\Roaming\\NuGet\\NuGet.Config",
