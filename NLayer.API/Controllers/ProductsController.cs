@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLayer.Core.DTOs;
 using NLayer.Core.Models;
 using NLayer.Core.Services;
+using NLayer.Service.Services;
 
 namespace NLayer.API.Controllers
 {
@@ -13,18 +14,28 @@ namespace NLayer.API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IService<Product> _service;
-
-        public ProductsController(IMapper mapper, IService<Product> service)
+        private readonly IProductService _productService;
+        public ProductsController(IMapper mapper, IService<Product> service, IProductService productService)
         {
             _mapper = mapper;
             _service = service;
+            _productService = productService;
         }
+
+        [HttpGet("GetProductsWithCategory")]
+        public async Task<IActionResult> GetProductsWithCategory()
+        {
+            return CreateActionResult(await _productService.GetProductsWithCategory());
+        }
+
+
         [HttpGet]
         public async Task<IActionResult> All()
         {
             var products = await _service.GetAllAsync();
-            var productsDTOS = _mapper.Map<List<ProductDTO>>(products.ToList());
-            // return Ok(CustomResponseDTO<List<ProductDTO>>.Success(200, productsDTOS)); Kirli yol
+            var productsDTOS = _mapper.Map<List<ProductDTO>>(products);
+            //return Ok(CustomResponseDTO<List<ProductDTO>>.Success(200, productsDTOS)); Kirli Yol 
+           
             return CreateActionResult(CustomResponseDTO<List<ProductDTO>>.Success(200, productsDTOS));
         }
         [HttpGet("{id}")]
@@ -32,7 +43,7 @@ namespace NLayer.API.Controllers
         {
             var product = await _service.GetByIdAsync(id);
             var productDTO = _mapper.Map<ProductDTO>(product);
-            return CreateActionResult(CustomResponseDTO<ProductDTO>.Success(200, productDTO));
+            return CreateActionResult<ProductDTO>(CustomResponseDTO<ProductDTO>.Success(200, productDTO));
         }
         [HttpPost()]
         public async Task<IActionResult> Save(ProductDTO productDto)
@@ -41,7 +52,7 @@ namespace NLayer.API.Controllers
             var productDTO = _mapper.Map<ProductDTO>(product);
             return CreateActionResult(CustomResponseDTO<ProductDTO>.Success(201, productDTO));
         }
-        [HttpPut("{id}")]
+        [HttpPut()]
         public async Task<IActionResult> Update(ProductUpdateDTO productDto)
         {
             await _service.UpdateAsync(_mapper.Map<Product>(productDto));

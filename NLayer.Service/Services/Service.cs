@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.Core.UnitOfWorks;
@@ -19,6 +20,9 @@ namespace NLayer.Service.Services
 
         public async Task<T> AddAsync(T entity)
         {
+            System.Diagnostics.Debug.WriteLine("lan bi şey basılmı");
+
+
             await _repository.AddAsync(entity);
             await _unitOfWork.CommitAsync();
             return entity; // Entitye değer ataması yapılmasa da id eklenir !
