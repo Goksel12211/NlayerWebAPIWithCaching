@@ -17,6 +17,7 @@ using NLayer.API.Middlewares;
 using Autofac.Extensions.DependencyInjection;
 using Autofac;
 using NLayer.API.Modules;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +31,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddMemoryCache();
 
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
 builder.Services.AddAutoMapper(typeof(MapProfile));
